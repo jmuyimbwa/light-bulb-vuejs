@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+
+
+</head>
+<body>
+    <div id = "app">
+    <button v-on:click="bulbOn = !bulbOn">Turn On/Off</button>
+    <p v-if="bulbOn" > <img src="./lightbulb.jpg" width="700" height="500"> </p>
+    <p v-else="bulbOn" > <img src="./bulboff.jpg"width="700" height="500"> </p>
+
+    </div>
+
+
+    <!--Direct script include using CDN-->
+    <script src="./vue.js"></script>
+    <script src="./bulb.js"></script>
+</body>
+    
+</html>
